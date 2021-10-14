@@ -1,0 +1,8 @@
+1) very simple
+Create an array containing temperatures
+Assuming those temps are fahrenheit, convert them into
+Celsius, and print them out. Make the conversion a function!
+
+1a) for each of the temperatures, categorize that temperature
+as either "a bit chilly", "quite pleasant", "far too hot" and
+include that in the printout.
