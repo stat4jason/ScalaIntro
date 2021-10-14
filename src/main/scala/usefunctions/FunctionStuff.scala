@@ -1,17 +1,17 @@
 package usefunctions
 
 object FunctionStuff {
-  def manyArgs(day: Int, month: Int, year: Int = 2022): Unit = {
+  def manyArgs(day: Int = 1, month: Int, year: Int = 2022): Unit = {
     println(s"day is ${day}, month is ${month}, year is ${year}")
   }
 
   def moreArgs(s: String, ss: String *): Unit = {
     println(s"first is ${s}")
+    println(s"type of vararg is ${ss.getClass}")
     val args = ss.toIterator
     while (args.hasNext) {
       println(s"> ${args.next()}");
     }
-
   }
 
   def apply(x: Int): Int = {
@@ -41,6 +41,7 @@ object FunctionStuff {
     manyArgs(1, 2, 2022)
     manyArgs(month = 2, day = 1, year = 2022)
     manyArgs(month = 2, day = 1)
+    manyArgs(month = 2)
 
     moreArgs("Fred", "Jim", "Sheila")
     val names = List("Jim", "Sheila")
