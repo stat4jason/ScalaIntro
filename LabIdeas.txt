@@ -17,3 +17,12 @@ invoke with named argument passing
 
 3a) optional, if you're done with 2 and 3 inside 15 minutes
 create a variable length argument list and call that too.
+
+4) write a function that returns the number of days in a given
+month (arguments will be month and year). ensure you handle
+leap years (a year is a leap year if it is exactly divisible by
+400, or if it's divisible by 4 and NOT by 100. If the month is
+meaningless, throw an exception.
+Call the function with a number of month/year pairs some of which
+are valid and others are not, handle the exception if a bad month
+is presented.

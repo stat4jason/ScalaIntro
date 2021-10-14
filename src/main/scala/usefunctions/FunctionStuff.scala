@@ -1,6 +1,17 @@
 package usefunctions
 
 object FunctionStuff {
+  def repeat(count: Int)(s: String) = {
+    var c = count
+    while (c > 0) {
+      println(s)
+      c -= 1
+    }
+  }
+
+  def showMyArg(s:String):Unit=
+    println(s)
+
   def manyArgs(day: Int = 1, month: Int, year: Int = 2022): Unit = {
     println(s"day is ${day}, month is ${month}, year is ${year}")
   }
@@ -46,5 +57,19 @@ object FunctionStuff {
     moreArgs("Fred", "Jim", "Sheila")
     val names = List("Jim", "Sheila")
     moreArgs("Fred", names:_*)
+
+    showMyArg("Hello")
+    showMyArg {
+      println("evaluating argument to function")
+      "Hello again"
+    }
+
+    println("-------------")
+//    repeat (3)("Hello world")
+    repeat {3}("Hello world")
+    repeat (3){
+      "Hello world"
+    }
+//    repeat(3, "goodbye")
   }
 }

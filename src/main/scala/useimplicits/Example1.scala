@@ -31,6 +31,5 @@ object Example1 {
     val numbers = List(1, 9, 3, 8, 4, 2, 6, 7)
     val inOrder = numbers.sorted
     println(s"numbers=${numbers}, sorted=${inOrder}")
-
   }
 }
