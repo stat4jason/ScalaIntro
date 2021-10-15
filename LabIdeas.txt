@@ -26,3 +26,14 @@ meaningless, throw an exception.
 Call the function with a number of month/year pairs some of which
 are valid and others are not, handle the exception if a bad month
 is presented.
+
+5) Represent a Car, which has a number of seats and a color and
+a Truck which has a payload (in pounds). Create some instances,
+verify that these objects render themselves as text "nicely", and
+that they provide equality comparison.
+
+5a) You are coding for a logistics company, which plans to use
+trucks and cars to move packages based on weight. The weight capacity
+of a car is 170 lbs per available seat (don't forget the driver
+must use one seat!). Build code using a match statement to indicate
+whether a particular "vehicle" can carry a particular load.
