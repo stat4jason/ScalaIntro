@@ -37,3 +37,26 @@ trucks and cars to move packages based on weight. The weight capacity
 of a car is 170 lbs per available seat (don't forget the driver
 must use one seat!). Build code using a match statement to indicate
 whether a particular "vehicle" can carry a particular load.
+
+6) Create a class called Date, representing a date. Provide it with
+a constructor and validate that it is initialized validly
+Support the validation in a companion object. Provide a factory in
+the companion object. Write enough code using it to verify that it
+behaves correctly.
+
+6a) Create a subclass of Date called Holiday which is a "Date with a
+name". Ensure that toString is good, prove that you get dynamic/polymorphic
+behavior on the instance methods.
+
+6b) Ensure Date is an immutable object, but create a "tomorrow" method
+which *returns* a new Date representing the day following. Test it.
+
+7) [see filereading.ReadAFile] Create a "concordance"--this is a table
+of word frequencies in a body of text. Read the file (as an Iterable)
+then convert lines into "words" (java.util.regex.Pattern and split, see
+ReadAFile) and then count the words frequencies into a Map (use groupBy...)
+Then print the table (optionally in descending order of frequency)
+
+8) Similar to the map method that I created, create 1) a foreach method
+and 2) create a flatmap method. Note both of these will require use of
+both generic declarations and lambdas to use the capabilities.
